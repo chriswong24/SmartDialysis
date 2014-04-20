@@ -1,0 +1,65 @@
+$(document).ready(function(){
+
+	$('#navlinks').on('activate.bs.scrollspy', function(){
+		var newtarget = $(this).find('li.active > a');
+	});
+
+	$('a.hashScroll').click(function (event) {
+        event.preventDefault();
+        //calculate destination place
+        var dest = 0;
+        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+            dest = $(document).height() - $(window).height();
+        } else {
+            dest = $(this.hash).offset().top;
+        }
+        
+        if (dest < 100)
+            dest = 0;
+        
+        //go to destination
+        $('html,body').animate({
+            scrollTop: dest
+        }, 750, 'swing');
+        
+        //refresh scrollspy
+        $('body').scrollspy('refresh');
+	});
+
+	setLandingSize();
+	$(window).resize(setLandingSize);
+
+	 $('#carousel-prev').click(function() {
+        owl.trigger('owl.prev');
+    });
+    
+    $('#carousel-next').click(function() {
+        owl.trigger('owl.next');
+    });
+
+});
+
+function resize(){
+	var window_width = $(window).width();
+}
+
+function setLandingSize() {
+    var sectionheight = $(window).height() - 80;
+    $('#landing').css('height', sectionheight);
+    
+    // center the play button
+    var center = $('.landing-center');
+    var dblmargin = sectionheight - controls.height();
+    controls.css('margin-top', dblmargin/2);
+    
+    // Resize pillars
+    var max = 0;
+    $('.pillars div.tab-pane').each(function() {
+        if ($(this).height() > max)
+            max = $(this).height()
+    });
+    $('.pillars div.tab-pane').height(max);
+}
+
+
+

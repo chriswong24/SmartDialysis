@@ -1,203 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Smart Dialysis</title>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta property="og:title" content="SmartDialysis" />
+	<meta property="og:site_name" content="SmartDialysis" />
+	<meta property="og:description" content="SmartDialysis: Making dialysis portable, convinient, and safe." />
+	<meta property="og:url" content="http://www.smartdialysis.com" />
+
+	<title>SmartDialysis</title>
+
+
+    <!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="vec-icons/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/smartdialysis.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Karla|Expletus+Sans:400,500|Rosario' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap -->
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body data-spy="scroll" data-target="#navlinks" data-offset="180" style class=" hasGoogleVoiceExt">
-    <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
-      <div class="navbar-container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--<script src="js/jquery.form.min.js"></script>-->
+    <script src="js/smartdialysis.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navlinks" data-offset="180">
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href = "#landing" id="logo" class="hashScroll">SmartDialysis</a>
+            </div>
+            <div id="navlinks" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" class="hashScroll">About</a></li>
+                    <li><a href="#vision" class="hashScroll">Vision</a></li>
+                    <li><a href="#technology" class="hashScroll">Technology</a></li>
+                    <li><a href="#team" class="hashScroll">Team</a></li>
+                    <li><a href="#partners" class="hashScroll">Partners</a></li>
+                    <li><a href="#contact" class="hashScroll">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="landing" class="background_1">
+        <div class="container-fluid">
+            <div class="landing-center">
+                <h1>SmartDialysis</h1>
+                <h2>Portable, Convenient, Safe,<br/> Smart</h2>
+            </div>
+            <button type="button" id="carousel-prev" class="carousel-btn carousel-btn-left">
+                <i class="glyphicon glyphicon-chevron-left"></i>
             </button>
-        <a href="#landing" id="logo" class="hashScroll">SmartDialysis</a>
-        </div>
-        <div id="navlinks" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#about" class="hashScroll">About</a>
-              </li>
-              <li>
-                <a href="#product" class="hashScroll">Product</a>
-              </li>
-              <li>
-                <a href="#technology" class="hashScroll">Technology</a>
-              </li>
-              <li>
-                <a href="#team" class="hashScroll">Team</a>
-              </li>
-              <li>
-                <a href="#contact" class="hashScroll">Contact</a>
-              </li>
-            </ul>
-        </div>
-      </div>
-      </nav>
-
-    <section id="landing">
-      <!-- Carousel -->
-      <div id="sd-carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#sd-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#sd-carousel" data-slide-to="1"></li>
-            <li data-target="#sd-carousel" data-slide-to="2"></li>
-          </ol>
-        
-        <!-- Wrappers for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/dialysis_cover_2.jpg"/>
-                <div class="carousel-caption">
-                  <h1>SmartDialysis</h1>
-                  <h2> Portable, Convenient, Safe <br/><br/> <span>Smart</span> </h2>
-                </div> 
-            </div>
-            
-            <div class="item">
-              <img src="images/dialysis_cover.jpg"/>
-                <div class="carousel-caption">
-                  <h1>Smart Dialysis</h1>
-                  <h2> Portable, Convenient, Safe <br/><br/> <span>Smart</span> </h2>
-                </div>
-            </div>
-          </div>
-
-        <!-- Controls -->
-          <a class="left carousel-control" href="#sd-carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#sd-carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-      </div>          
-                      
-      <!--
-      <div class="container">
-
-        <div class="landing_center">
-          <h1> Smart Dialysis </h1>
-          <h2> Convienient, Safe, Portable <br/><br/> <span> Smart </span> </h2>
-        </div>
-      -->
-
-    </section>    
-
-    <section id="about">
-      <div class="container">
-        <div class="section_title">
-          <h1>What is SmartDialysis?</h1>
-        </div>  
-
-        <div class="section_description">
-        <p>SmartDialysis is a startup company based in Rochester, New York, USA, with members whose backgrounds vary from biomedical engineering, nephrology, mechanical engineering, business management, and computer science. Our team has been working closely with our partners in the hemodialysis industry.</p>
-        <br/>
-        <p>Our mission is to improve the quality of life and length of End Stage Renal Disease (ESRD) patients with several generations of portable hemodialysis products. Our ultimate goal is to create a portable, iPhone-size hemodialysis device so that ESRD patients will be able to make fewer trips to a dialysis center.</p>
-        <br/>
-        <p>Our product will allow patients to perform hemodialysis at their own convinience with fewer medical complications and an overall better outcome.  We are enhancing the healthcare system to improve the overall public health with a limited budget.</p>
-        </div>
-
-
-      </div>  
+            <button type="button" id="carousel-next" class="carousel-btn carousel-btn-right">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </button>
+                                                        
     </section>
 
-    <section id="product">
-      <div class="container">
-        <div class="section_title">
-          <h1>Our Product</h1>
-        </div>
+    <section id ="about">
+        <div class="container">
+            <div class="section_title">
+                <h1>What is SmartDialysis?</h1>
+                <hr>
+            </div>
 
-        <div class="section description">
-          <h2>Generation I - Mobilysis</h2>
+            <div class="section_description">
+                 <p>SmartDialysis is a startup company based in Rochester, New York, USA, with members whose backgrounds vary from biomedical engineering, nephrology, mechanical engineering, business management, and computer science. Our team has been working closely with our partners in the hemodialysis industry.</p>
+                <br/>
+                <p>Our mission is to improve the quality of life and length of End Stage Renal Disease (ESRD) patients with several generations of portable hemodialysis products. Our ultimate goal is to create a portable, iPhone-size hemodialysis device so that ESRD patients won't need to frequent dialysis centers and can enjoy more mobile lifestyles. Our product will allow patients to perform hemodialysis at their own convinience with fewer medical complications and an overall better outcome.  We are helping the healthcare system to improve public health with a limited budget.</p>
+            </div>    
         </div>
+    </section>
 
-        <div class="image_container product_image">
+    <section id="vision">
+        <div class="container">
+            <div class="section_title">
+                <h1>Our Vision</h1>
+                <hr>
+            </div>
+             <div class="section_description less_padding">
+                <p>Our early products are the cartridges that are integrable to current dialyzers. This will help our users achieve better outcomes with fewer complications.</p>
+            </div>
+
+            <div class="section_title less_padding">
+                <h2>Product Evolution</h2>
+            </div> 
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="generation">
+                        <div class="generation_title">
+                            <h3>Generation I<br/>Portable</h3>
+                            <hr>
+                        </div>
+                        <img src="images/generation1.jpg"/>
+                        <hr>
+                        <div class="generation_description">
+                            <p>Smaller yet better!<br/><br/>
+                            Design to be portable, safe and convenient for both the ESRD patinents and the doctors. Mobilysis is our first generation product that reduces the extracorporeal blood volume needed and creates a safer, more efficient dialysis experience.<br/>
+                            <br/>
+                            Mobilysis will be suitable for ambulatory setting, and also direct home hemodialysis, so patients using our device will have a better results with fewer complications.</p>
+                         </div>
+                    </div>
+                </div> <!-- End of generation 1 -->
+
+                <div class="col-md-4">
+                    <div class="generation">
+                        <div class="generation_title">
+                            <h3>Generation II<br/>Attatchable</h3>
+                            <hr>
+                        </div>
+                        <img src="images/generation2.jpg"/>
+                        <hr>
+                        <div class="generation_description">
+                            <p> No hassle, only buckle.<br/><br/>
+                              As a natural flow of our product evolution, our generation II product will feature an attachable, fully portable device, which will save the patients the hassle of travelling back and forth to the dialysis centers.<br/><br/>
+                              Centered on the health and convenience of ESRD patients, our design will truly revolutionize the way dialysis process is done. And with it, those who use it will feel the difference. We believe that every ESRD patient deserves to live a normal life without being constrained within dialysis centers. So simple, yet so helpful.</p>
+                        </div>
+                    </div>
+                </div> <!-- End of generation 2 -->
+                
+                <div class="col-md-4">
+                    <div class="generation">
+                        <div class="generation_title">
+                            <h3>Generation III<br/>Wearable</h3>
+                            <hr>
+                        </div>
+                        <img src="images/generation3.jpg"/>
+                        <hr>
+                        <div class="generation_description">
+                          <p> You can wear it!<br/><br/>
+                              As the holy grail of our dialysis product line, our generation III device will be an iPod sized device that users can easily wear!<br/><br/>  The advanced wastes removal material along with our super efficient nanomembrane, the third generation of our product sits right on the boundary of science and art.
+                              Not only do the ESRD patients never need to travel to the dialysis center again, they don’t even need to carry the DI cleaning fluid to take away the toxins and wastes. Rethink possible! End stage renal disease is not the end stage of our patients’ wonderful lives!</p>
+                        </div>
+                    </div>
+                </div> <!-- End of generation 3 -->
+            </div> <!-- End of row -->                       
+
         </div>
-
-      </div> 
-    </section>  
+    </section>
 
     <section id="technology">
-      <div class="container">
-        <div class="section_title">
-          <h1>Technology</h1>
-        </div>  
-        <hr>
-          <div class="image_container technology_image">
-          </div>
-      </div>
+        <div class="container">
+            <div class="section_title">
+                <h1>Our Technology</h1>
+                <hr>
+            </div>
 
-        <div class="section_description tech_description">
-        <p>We have been advancing the technology of hemodialysis devices for years. 
-          Our current focus is to use our efficient integrated membrane cascade system to dialyze the blood safer, better, and with fewer complications.</p>
-        </div>  
-      </div>    
+            <div class="image_wrapper">
+                <img src="images/nanomembrane_technology.jpg">
+            </div>
+
+            <div class="section_description less_padding tech_description bottom_padding">
+                <p>We have been advancing the technology of hemodialysis devices for years. 
+                  Our current focus is to use our efficient integrated membrane cascade system to dialyze the blood safer, better, and with fewer complications.</p><br/>
+                <p>These membranes are 100 to 1000 times thinner than conventional membranes and thus are orders of magnitude more efficient for dialysis. In fact, given the molecular thickness of these membranes ($15 nm), and their appreciable porosity ($15%), pnc-Si membranes operate near the maximum permeability that is achievable for a nanoporous membrane. In addition, the membrane pore sizes can be tuned to match specific molecular separation goals, and the silicon platform allows for scalable manufacturing and straightforward integration with fluidics. The material advancements have allowed us to make pnc-Si membranes with 26-fold more active membrane area than previously possible.</p><br/>
+                <p>Our technology reduces the blood flow needed to perform dialysis, thus reducing the amount of vascular access problems. It also creates less inflamation by activating fewer blood cells than current dialysis techniques, and is able to remove beta 2 microgobulins and other toxic molecules in that size range much quicker.</p><br/>
+                <p>The use of microfluidics and microelectronics allows our product to become portable and also allows for remote monitoring.  This advancement not only has the potential to decrease costs through reducing dialysis center facility and technician costs, but also has the potential to become a practical home hemodialysis system that enables longer dialysis times, which has been associated with better dialysis outcomes.</p>
+            </div>
+        </div> 
     </section>
-    
+
     <section id="team">
-      <div class="container">
-        <div class="section_title">
-          <h1>Meet the Team</h1>
-         </div>
+        <div class="container">
+            <div class="section_title">
+                <h1>Meet the Team</h1>
+                <hr>
+            </div>
 
-        <div class="team_title">
-          <h2>Team Members</h2>
-        </div>
-        <div class="team_container">
-          <img src="images/adam.jpg"/>
-          <img src="images/aizhong.jpg"/>
-          <img src="images/bowei.jpg"/>
-          <img src="images/kenny.jpg"/>
-          <img src="images/stevegillmer.jpg"/>
-          <img src="images/chriswong.jpg"/>
-        </div>
+            <div class="team_title">
+                <h2>Team Members</h2>
+            </div>
 
-        <div class="team_title">
-          <h2>Technical Advisors</h2>
-        </div>
-        <div class="team_container">
-          <img src="images/jimmcgrath.jpg" />
-          <img src="images/georgeanstadt.jpg" />
-          <img src="images/deanjohnson.jpg" />
-        </div>
-      </div>   
+            <div class="row less_bottom_padding">
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/adam.jpg"/>
+                        <div class="member_name">
+                            <h3>Adam Deng</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/stevegillmer.jpg"/>
+                        <div class="member_name">
+                            <h3>Steven Gillmer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/kenny.jpg"/>
+                        <div class="member_name">
+                            <h3>Kenny Goodfellow</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of first row -->
+
+            <div class="row less_bottom_padding">
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/chriswong.jpg"/>
+                        <div class="member_name">
+                            <h3>Christopher Wong</h3>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/aizhong.jpg"/>
+                        <div class="member_name">
+                            <h3>Aizhong Zhang</h3>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/bowei.jpg"/>
+                        <div class="member_name">
+                            <h3>Bowei Zhang</h3>
+                        </div>
+                    </div>    
+                </div>
+            </div> <!-- End of second row -->
+
+            <div class="team_title">
+                <h2>Technical Advisors</h2>
+            </div>
+
+            <div class="row less_bottom_padding">
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/georgeanstadt.jpg"/>
+                        <div class="member_name">
+                            <h3>George Anstadt</h3>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/deanjohnson.jpg"/>
+                        <div class="member_name">
+                            <h3>Dean Johnson</h3>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="member_box">
+                        <img src="images/jimmcgrath.jpg"/>
+                        <div class="member_name">
+                            <h3>Jim McGrath</h3>
+                        </div>
+                    </div>    
+                </div>
+            </div> <!-- End of third row -->                
+
+        </div>        
     </section>
-    
+
+    <section id="partners">
+        <div class="container">
+
+            <div class="section_title">
+                <h1>Our Partners</h1>
+                <hr>
+            </div>
+            <!--
+            <div class="section_description less_padding">
+                <p>SmartDialysis has partnered up with the <a href="http://www.rochester.edu">University of Rochester</a> and <a href="http://www.simpore.com">SiMPore</a> to help achieve our goal of improving dialysis techniques.</p>
+            </div> -->    
+
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="http://www.rochester.edu"><img src="images/ur_logo.jpg" class="img-rounded sponsor_logo" /></a>
+                    <h2 class="sponsor_title">University of Rochester</h2>
+                    <p class="justified">The University of Rochester is the patent holder to the nanomembrane technology and home to Jim McGrath, the leading innovator behind SmartDialysis' nanomembrane technology.  In addition, most of the SmartDialysis team have also earned their degrees from the University of Rochester. </p>
+                    <p class="justified">Over the years, around $5,000,000 has been invested into the research and application of the nanomembrane technology.</p>
+                    <p class="justified partners_link"><a href="https://www.urmc.rochester.edu/labs/McGrath-Lab/">https://www.urmc.rochester.edu/labs/McGrath-Lab/</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="http://www.simpore.com"><img src="images/simpore_logo.jpeg" class="img-rounded sponsor_logo" /></a>
+                    <h2 class="sponsor_title">SiMPORE Inc.</h2>
+                    <p class="justified">SiMPORE Inc. is a well established commercial company, who will be the supplier of the nanomembranes used by SmartDialysis.  Jim McGrath is also a signifigcant equity holder of SiMPORE Inc.</p>
+                    <p class="justified partners_link_right"><a href="http://www.simpore.com">http://www.simpore.com</a></p>
+                </div>    
+            </div>        
+
+
+        </div>        
+    </section>
+
     <section id="contact">
-      <div class="container">
-        <div class="section_title">
-          <h1>Want to Get in Touch?</h1>
-        </div>
-      </div>    
-    </section>     
+        <div class="container">
+            <div class="section_title">
+                <h1>Contact Us</h1>
+                <hr>
+            </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/smart_dialysis.js"></script>
-    <script src="js/jquery.carousel.fullscreen.js"></script>
+            <div class="contact_container">
+                <form method="post" action="">
+                    <div class="form-group">
+                        <label class="control-label">Name: </label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email: </label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Subject: </label>
+                        <input type="text" class="form-control" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Message: </label>
+                        <textarea rows="10" cols="40" name="message" class="form-control"></textarea>
+                    </div>
+                <input type="submit" class="btn btn-default" name="submit" value="send">
+              </form>
+            </div>  
+        </div>    
+    </section>
 
-  </body>
+
+                           
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
