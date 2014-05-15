@@ -33,12 +33,24 @@ $(document).ready(function(){
 	var background_timer = setTimeout(changeBackground, 8000);
 
 
+	//Change background picture
    	$('#carousel-prev').click(changeBackgroundClick);
    	$('#carousel-next').click(changeBackgroundClick);
 
 
+   	//Dialog boxes
+   	$('.popup').dialog({autoOpen: false});
+
+   	//Opens dialog box
+   	$('#team_adam').click(function(){
+   		$('#adam_popup').dialog('open');
+   	});
+
+
 
 });
+
+
 
 function resize(){
 	var window_width = $(window).width();
